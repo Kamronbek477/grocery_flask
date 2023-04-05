@@ -8,13 +8,13 @@ db = GroceryDB()
 def home():
 
     table = """<table>
-    <a href="http://http://kamronbekrahmonov.pythonanywhere.com/grocery"> All product </a><br>
-    <a href="http://http://kamronbekrahmonov.pythonanywhere.com/grocery/type/fruit"> fruit </a><br>
-    <a href="http://http://kamronbekrahmonov.pythonanywhere.com/grocery/type/vegetable"> vegetable </a><br>
-    <a href="http://http://kamronbekrahmonov.pythonanywhere.com/grocery/type/dairy"> dairy </a><br>
-    <a href="http://http://kamronbekrahmonov.pythonanywhere.com/grocery/type/bakery"> bakery </a><br>
-    <a href="http://http://kamronbekrahmonov.pythonanywhere.com/grocery/type/meat"> meat </a><br>
-    <a href="http://http://kamronbekrahmonov.pythonanywhere.com/grocery/type/grain"> grain </a><br> </table>"""
+    <a href="http://kamronbekrahmonov.pythonanywhere.com/grocery"> All product </a><br>
+    <a href="http://kamronbekrahmonov.pythonanywhere.com/grocery/type/fruit"> fruit </a><br>
+    <a href="http://kamronbekrahmonov.pythonanywhere.com/grocery/type/vegetable"> vegetable </a><br>
+    <a href="http://kamronbekrahmonov.pythonanywhere.com/grocery/type/dairy"> dairy </a><br>
+    <a href="http://kamronbekrahmonov.pythonanywhere.com/grocery/type/bakery"> bakery </a><br>
+    <a href="http://kamronbekrahmonov.pythonanywhere.com/grocery/type/meat"> meat </a><br>
+    <a href="http://kamronbekrahmonov.pythonanywhere.com/grocery/type/grain"> grain </a><br> </table>"""
     return table
 # view all grocery
 @app.route('/grocery')
@@ -24,13 +24,13 @@ def all_grocery():
 
     table = '<table border="1">'
     table += """
-    <a href="http://http://kamronbekrahmonov.pythonanywhere.com/grocery"> All product </a><br>
-    <a href="http://http://kamronbekrahmonov.pythonanywhere.com/grocery/type/fruit"> fruit </a><br>
-    <a href="http://http://kamronbekrahmonov.pythonanywhere.com/grocery/type/vegetable"> vegetable </a><br>
-    <a href="http://http://kamronbekrahmonov.pythonanywhere.com/grocery/type/dairy"> dairy </a><br>
-    <a href="http://http://kamronbekrahmonov.pythonanywhere.com/grocery/type/bakery"> bakery </a><br>
-    <a href="http://http://kamronbekrahmonov.pythonanywhere.com/grocery/type/meat"> meat </a><br>
-    <a href="http://http://kamronbekrahmonov.pythonanywhere.com/grocery/type/grain"> grain </a><br>"""
+    <a href="http://kamronbekrahmonov.pythonanywhere.com/grocery"> All product </a><br>
+    <a href="http://kamronbekrahmonov.pythonanywhere.com/grocery/type/fruit"> fruit </a><br>
+    <a href="http://kamronbekrahmonov.pythonanywhere.com/grocery/type/vegetable"> vegetable </a><br>
+    <a href="http://kamronbekrahmonov.pythonanywhere.com/grocery/type/dairy"> dairy </a><br>
+    <a href="http://kamronbekrahmonov.pythonanywhere.com/grocery/type/bakery"> bakery </a><br>
+    <a href="http://kamronbekrahmonov.pythonanywhere.com/grocery/type/meat"> meat </a><br>
+    <a href="http://kamronbekrahmonov.pythonanywhere.com/grocery/type/grain"> grain </a><br>"""
     table += """<tr><th>name</th> <th>quantity</th> <th>price</th> <th>type</th></tr>"""
     for fruit in fruits:
         table += f'<tr><th>{fruit["name"]}</th><th>{fruit["quantity"]}</th><th>{fruit["price"]}$</th><th>{fruit["type"]}</th></tr>'
@@ -55,13 +55,13 @@ def all_grocery_by_type(type):
     if fruits :
         table = """
         <table border="1">
-        <a href="http://http://kamronbekrahmonov.pythonanywhere.com/grocery"> All product </a><br>
-        <a href="http://http://kamronbekrahmonov.pythonanywhere.com/grocery/type/fruit"> fruit </a><br>
-        <a href="http://http://kamronbekrahmonov.pythonanywhere.com/grocery/type/vegetable"> vegetable </a><br>
-        <a href="http://http://kamronbekrahmonov.pythonanywhere.com/grocery/type/dairy"> dairy </a><br>
-        <a href="http://http://kamronbekrahmonov.pythonanywhere.com/grocery/type/bakery"> bakery </a><br>
-        <a href="http://http://kamronbekrahmonov.pythonanywhere.com/grocery/type/meat"> meat </a><br>
-        <a href="http://http://kamronbekrahmonov.pythonanywhere.com/grocery/type/grain"> grain </a><br>
+        <a href="http://kamronbekrahmonov.pythonanywhere.com/grocery"> All product </a><br>
+        <a href="http://kamronbekrahmonov.pythonanywhere.com/grocery/type/fruit"> fruit </a><br>
+        <a href="http://kamronbekrahmonov.pythonanywhere.com/grocery/type/vegetable"> vegetable </a><br>
+        <a href="http://kamronbekrahmonov.pythonanywhere.com/grocery/type/dairy"> dairy </a><br>
+        <a href="http://kamronbekrahmonov.pythonanywhere.com/grocery/type/bakery"> bakery </a><br>
+        <a href="http://kamronbekrahmonov.pythonanywhere.com/grocery/type/meat"> meat </a><br>
+        <a href="http://kamronbekrahmonov.pythonanywhere.com/grocery/type/grain"> grain </a><br>
         <tr>
             <th>name</th>
             <th>quantity</th>
