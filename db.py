@@ -2,10 +2,10 @@ import tinydb
 
 class GroceryDB:
     def __init__(self):
-        self.db = tinydb.TinyDB('fruitDB.json',indent=4, separators=(',', ': '))
+        self.db = tinydb.TinyDB('grocery_flask/db.json',indent=4, separators=(',', ': '))
         self.table = self.db.table('grocery')
 
-    def add(self, fruit: dict):
+    def add(self, fruit: dict): 
         '''Add a fruit to the database
         
         Args:
