@@ -4,8 +4,9 @@ from db import GroceryDB
 
 app = Flask(__name__)
 db = GroceryDB()
-
-
+@app.route('/')
+def home():
+    return 'Home page'
 # view all grocery
 @app.route('/grocery')
 def all_grocery():
