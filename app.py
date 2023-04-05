@@ -7,7 +7,7 @@ db = GroceryDB()
 @app.route('/')
 def home():
 
-    table += """<table>
+    table = """<table>
     <a href="http://http://kamronbekrahmonov.pythonanywhere.com/grocery"> All product </a><br>
     <a href="http://http://kamronbekrahmonov.pythonanywhere.com/grocery/type/fruit"> fruit </a><br>
     <a href="http://http://kamronbekrahmonov.pythonanywhere.com/grocery/type/vegetable"> vegetable </a><br>
