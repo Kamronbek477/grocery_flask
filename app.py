@@ -6,7 +6,16 @@ app = Flask(__name__)
 db = GroceryDB()
 @app.route('/')
 def home():
-    return 'Home page'
+
+    table += """'<table>'
+    <a href="http://http://kamronbekrahmonov.pythonanywhere.com/grocery"> All product </a><br>
+    <a href="http://http://kamronbekrahmonov.pythonanywhere.com/grocery/type/fruit"> fruit </a><br>
+    <a href="http://http://kamronbekrahmonov.pythonanywhere.com/grocery/type/vegetable"> vegetable </a><br>
+    <a href="http://http://kamronbekrahmonov.pythonanywhere.com/grocery/type/dairy"> dairy </a><br>
+    <a href="http://http://kamronbekrahmonov.pythonanywhere.com/grocery/type/bakery"> bakery </a><br>
+    <a href="http://http://kamronbekrahmonov.pythonanywhere.com/grocery/type/meat"> meat </a><br>
+    <a href="http://http://kamronbekrahmonov.pythonanywhere.com/grocery/type/grain"> grain </a><br> '</table>'"""
+    return table
 # view all grocery
 @app.route('/grocery')
 def all_grocery():
